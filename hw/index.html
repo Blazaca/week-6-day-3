@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="js/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="row justify-content-center background">
+        <div class="col-6 col-lg-3 text-center textbox">
+            <form name="data" id="dataForm">
+                <label for="year" id="textarea">Year</label>
+                <input type="text" id="year" name="year">
+                <label for="round" id="textarea">Round</label>
+                <input type="text" id="round" name="round">
+            </form>
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+            <button class="btn btn-primary mt-3"onclick="getData()">Get Data</button>
+            <button class="btn btn-warning mt-3" onclick="clearData()">Clear Data</button>
+            <section class="list-group ranger-list"></section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-12 col-lg-8 d-flex justify-content-center racer_table">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Position</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Nationality</th>
+                    <th scope="col">Sponsor</th>
+                    <th scope="col">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr id="row0">
+                        <th scope="row" id="position-0">1</th>
+                        <td id="name-0"></td>
+                        <td id="nation-0"></td>
+                        <td id="sponsor-0"></td>
+                        <td id="points-0"></td>
+                      </tr>
+                      <tr id="row1">
+                        <th scope="row" id="position-1">2</th>
+                        <td id="name-1"></td>
+                        <td id="nation-1"></td>
+                        <td id="sponsor-1"></td>
+                        <td id="points-1"></td>
+                      </tr>
+                      <tr id="row2">
+                        <th scope="row" id="position-2">3</th>
+                        <td id="name-2"></td>
+                        <td id="nation-2"></td>
+                        <td id="sponsor-2"></td>
+                        <td id="points-2"></td>
+                      </tr>
+                      <tr id="row3">
+                        <th scope="row" id="position-3">4</th>
+                        <td id="name-3"></td>
+                        <td id="nation-3"></td>
+                        <td id="sponsor-3"></td>
+                        <td id="points-3"></td>
+                      </tr>
+                      <tr id="row4">
+                        <th scope="row" id="position-4">5</th>
+                        <td id="name-4"></td>
+                        <td id="nation-4"></td>
+                        <td id="sponsor-4"></td>
+                        <td id="points-4"></td>
+                      </tr>
+                      <tr id="row5">
+                        <th scope="row" id="position-5">6</th>
+                        <td id="name-5"></td>
+                        <td id="nation-5"></td>
+                        <td id="sponsor-5"></td>
+                        <td id="points-5"></td>
+                      </tr>
+                      <tr id="row6">
+                        <th scope="row" id="position-6">7</th>
+                        <td id="name-6"></td>
+                        <td id="nation-6"></td>
+                        <td id="sponsor-6"></td>
+                        <td id="points-6"></td>
+                      </tr>            
+                </tbody>
+              </table>
+        </div>
+</body>
+</html>
